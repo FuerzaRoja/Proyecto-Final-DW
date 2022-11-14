@@ -1,0 +1,200 @@
+/* Proyecto Final Módulo Diseño Web
+   Antonio Pérez Bautista */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    width: 86%;
+    height: 15vh;
+    margin: 0% 7%;
+    display: flex;
+}
+header > div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.usuario{
+    justify-content: flex-end;
+}
+.cont_img, .cont_menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.cont_img{
+    width: 15%;
+}
+.cont_menu{
+    width: 85%;
+    justify-content: flex-start;
+}
+.img_logo{
+    width: 70%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+.link_menu{
+    text-decoration-line: none;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 0.2rem 0.3rem;
+    margin: 0rem 0.7rem;
+}
+.link_menu:hover{
+    text-decoration: underline;
+}
+.link_menu:active{
+    text-decoration: none;
+    color: #737373;
+}
+.boton_menu{
+    font-size: 1rem;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin: 0rem 0.5rem;
+}
+.boton_menu.inicio{
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 0.5rem 1rem;
+}
+.boton_menu.registro{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 0.5rem 1.5rem;
+}
+.boton_menu.inicio:hover{
+    background-color: #148746;
+    color: #ffffff;
+    border-color: #148746;
+}
+.boton_menu.registro:hover{
+    background-color: #ff143d;
+    border-color: #ff143d;
+}
+.boton_menu.inicio:active{
+    box-shadow: inset 0 0 20px #cccccc;
+}
+.boton_menu.registro:active{
+    box-shadow: inset 0 0 20px #cccccc;
+}
+
+/* MAIN */
+main > section{
+    width: 90%;
+    height: 60vh;
+    margin: 0vh 5% 5vh 5%;
+    color: #ffffff;
+    text-align: center;
+}
+/* Sección 1 */
+.seccion_1{
+    background-color: #148746;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulo{
+    font-size: 3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+    line-height: 1.3;
+}
+.parrafo{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 1.3;
+}
+.link_aprende{
+    color: #ffffff;
+}
+.link_aprende:hover{
+    font-weight: 700;
+}
+.link_aprende:active{
+    color:#8a2be2;
+}
+/* Sección 2 y 3 */
+.seccion_2, .seccion_3{
+    background-color: #ff143d;
+    display: flex;
+}
+.seccion_2 > div, .seccion_3 > div{
+    width: 50%;
+    height: 100%;
+}
+.seccion2_img, .seccion3_img{
+    position: relative;
+}
+.img_alebrije1, .img_alebrije2{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.seccion2_texto, .seccion3_texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.boton_pedido{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 100;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 1.5rem;
+}
+.boton_pedido:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+.boton_pedido:active{
+    box-shadow: inset 0 0 1rem #cccccc;
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* FOOTER */
+footer{
+    width: 86%;
+    height: 25vh;
+    margin: 8vh 7% 0 7%;
+    font-size: 1rem;
+    position: relative;
+}
+.cont_redes{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_redes{
+    width: 70%;
+}
+.texto_pie_pagina{
+    position: absolute;
+    bottom: 15%;
+}
